@@ -28,8 +28,8 @@ def get_sales_data():
         data_str = input("Enter your data here:\n")
     
         sales_data = data_str.split(",")
-        validate_data(sales_data)
-        
+        # validate_data(sales_data)
+
         if validate_data(sales_data):
             print("Data is valid!")
             break
@@ -52,7 +52,6 @@ def validate_data(values):
     except ValueError as e:
         print(f"Invalid data: {e}, please try again.\n")
         return False
-
     return True
 
 
